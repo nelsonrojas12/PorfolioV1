@@ -1,0 +1,132 @@
+/* ContactMe.module.css */
+.contactMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.sectionTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s, clip-path 0.3s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contactButton:hover {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.icon {
+
+  width: 40px;
+}
+
+/* Center the icon vertically and horizontally */
+.contactButton .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Add your own color classes or IDs */
+.contactButton.linkedin {
+  background-color: #0077B5;
+}
+
+.contactButton.github {
+  background-color: #181717;
+}
+
+.contactButton.email {
+  background-color: #D14836;
+}
+
+.contactButton.phone {
+  background-color: #25D366;
+}
+
+/* Estilos para la sección de contacto en dispositivos móviles */
+@media (max-width: 412px) { /* Ajustamos el ancho máximo para Samsung A51 */
+  .contactMeContainer {
+    flex-direction: column; /* Cambiamos la dirección a columna para dispositivos móviles */
+    padding: 20px; /* Añadimos un espacio interno para dispositivos móviles */
+    align-items: center; /* Centramos verticalmente en dispositivos móviles */
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center; /* Centramos el texto */
+  }
+
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creamos dos columnas */
+    gap: 10px; /* Agregamos espacio entre los botones */
+    align-items: center; /* Centramos horizontalmente */
+    justify-content: center; /* Centramos verticalmente */
+  }
+
+  .contactButton {
+    width: 120px; /* Aumentamos el ancho de los botones */
+    height: 120px; /* Aumentamos la altura de los botones */
+    font-size: 14px; /* Aumentamos el tamaño de fuente */
+  }
+
+  .icon {
+    width: 30px; /* Reducimos el tamaño de los íconos */
+  }
+
+  /* Estilos específicos para cada botón de contacto */
+  .contactButton.linkedin {
+    background-color: #0077B5;
+  }
+
+  .contactButton.github {
+    background-color: #181717;
+  }
+
+  .contactButton.email {
+    background-color: #D14836;
+  }
+
+  .contactButton.phone {
+    background-color: #25D366;
+  }
+}

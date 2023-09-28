@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+
+  
+  --main-bg-color: #043353;
+  --text-color: #faf8f0;
+  --accent-color-1: #18a4e0;
+  --accent-color-2: #d3dde6;
+  --accent-color-3: #b6bcc0;
+  --accent-color-4: #18a4e0;
+
+  background: #020511;
+  background-image: url('');
+  background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+
+ 
+}
+
+
+/* Estilos para el elemento con el efecto deseado */
+.custom-element {
+  position: absolute;
+  left: 50%;
+  top: 100vh;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  width: 10px;
+  height: 0px;
+  background-color: #0ea5e9;
+  box-shadow: 0px 0px 300px 50px #0ea5e9;
+  border-radius: 50%;
+  animation: breathe 3s alternate infinite; 
+}
+
+@keyframes breathe {
+  from {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+  to {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* styles.css */
+
+/* Cambiar el color del scroll lateral en Firefox */
+/* Cambia los colores según tus preferencias */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+  background-color: #f5f5f5; /* Color de fondo de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2bb5e3; /* Color de la barra de desplazamiento */
+  border-radius: 10px; /* Bordes redondeados de la barra */
+}
+
+/* Cambiar el color y la forma del scroll lateral en WebKit */
+/* Cambia los colores y las formas según tus preferencias */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+  background-color: #f5f5f5; /* Color de fondo de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #15a7e6; /* Color de la barra de desplazamiento */
+  border-radius: 10px; /* Bordes redondeados de la barra */
+}
+
+/* Establecer el ancho y la forma del scroll lateral */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Color de fondo de la pista */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #105cf2; /* Cambia el color al pasar el cursor por encima */
+}
+
+
+
+
+
+

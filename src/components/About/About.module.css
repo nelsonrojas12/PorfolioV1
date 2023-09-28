@@ -1,0 +1,100 @@
+/* About.module.css */
+
+.aboutContainer {
+  padding: 150px;
+  display: flex;
+  align-items: center;
+  justify-content:center; 
+  margin: 20px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Cambia la dirección a columna para apilar los elementos verticalmente */
+}
+
+.profileImage {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 80px; /* Agrega un margen inferior */
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
+  position: center;
+}
+
+.aboutCard {
+  flex: 1; /* Ocupa el espacio restante */
+  margin-left: 20px; /* Agrega un margen entre la imagen y el contenido */
+  padding: 20px;
+  background: rgba(222, 213, 213, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textContainer {
+  flex: 2;
+  width: 500px;
+  height: 200px;
+}
+
+.aboutText {
+  color: #cdc8c8;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.highlightedText {
+  color: #007bff;
+}
+
+.devTitle {
+  font-size: 20px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #a9a9a9; /* Cambia el color según tu paleta */
+}
+
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 0px;
+    flex-direction: column; /* Cambiar la dirección a columna para dispositivos móviles */
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 24px; /* Reduce el tamaño del título para dispositivos móviles */
+  }
+
+  .textContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutCard {
+    margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+  }
+
+  .sectionTitle {
+    padding: 10px; /* Reduce el espacio alrededor del título */
+  }
+}

@@ -1,0 +1,154 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #04335300;
+  padding: 10px 20px;
+}
+
+.brand {
+  margin-right: -210px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+/* Agrega una animación de movimiento al texto */
+.brand:hover {
+  color: #36a0e0; /* Cambia el color al pasar el cursor por encima */
+  transform: translateY(-2px); /* Desplaza ligeramente hacia arriba */
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navLinks li {
+  position: relative; /* Añade posición relativa para los elementos de la lista */
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  color: white; /* Letras blancas */
+  padding: 10px 15px; /* Espacio alrededor del texto */
+  border-radius: 20px; /* Bordes redondeados */
+}
+
+.navLinks li a::before {
+  content: ""; /* Agrega un elemento pseudo ::before */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #12b4ffd6; /* Fondo celeste */
+  opacity: 0; /* Inicialmente invisible */
+  z-index: -1; /* Detrás del texto */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición de opacidad y transformación */
+}
+
+.navLinks li a:hover::before {
+  opacity: 1; /* Hacer visible al pasar el cursor por encima */
+  transform: scale(1.1); /* Efecto de escala al pasar el cursor por encima */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 412px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #04335300;
+    padding: 10px 20px;
+  }
+
+  .brand {
+    font-size: 24px;
+    margin-right: auto;
+    margin-left: 20px;
+  }
+
+  .menuButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menuButton:hover {
+    background-color: transparent;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+
+  .navLinks {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #043353;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+  }
+
+  .navLinks.active {
+    transform: scaleY(1);
+  }
+
+  .navLinks li {
+    padding: 10px 0;
+  }
+
+  .navLinks li a {
+    font-size: 18px;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .navLinks li a:hover {
+    background-color: #36a0e0;
+  }
+
+  /* Estilos para el botón del CV */
+  .cvButton {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /* Estilos para el botón de traducción */
+  .translationButton {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}

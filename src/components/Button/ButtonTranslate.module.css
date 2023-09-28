@@ -1,0 +1,74 @@
+.languageButtons {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .languageButton {
+    background-color: rgba(220, 20, 60, 0);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .languageButton:hover {
+    background-color: #2097d7;
+    
+    height: 15px;
+  }
+  
+  .arrowIcon {
+    margin-left: 5px;
+  }
+  
+  .dropdownContent {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(222, 32, 32, 0);
+    box-shadow: 0px 0px 10px rgba(26, 150, 239, 0);
+    border-radius: 5px;
+    z-index: 1;
+   
+  }
+  
+  .languageOption {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 8px 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    color: #2891dd;
+  }
+  
+  .languageOption img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .languageOption:hover {
+    background-color: #f0f0f000;
+    color: #19aada;
+  }
+  
+
+  .languageOption img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #36a0e0; /* Color del marco */
+    padding: 2px;
+    transition: transform 0.3s ease;
+  }

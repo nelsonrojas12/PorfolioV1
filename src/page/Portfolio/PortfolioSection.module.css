@@ -1,0 +1,19 @@
+.scrollButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .scrollButton:hover {
+    background-color: #005a8f;
+  }
+
+  

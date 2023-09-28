@@ -1,0 +1,144 @@
+.skillsContainer {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    color: #1b5be7;
+    margin-bottom: 20px;
+}
+
+.skillsCard {
+    background-color: #f8f9fa00;
+    border-radius: 10px;
+    box-shadow: 0 4px 106px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.skillContainer {
+    width: 100px;
+    background-color: #ffffff36;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(14, 68, 185, 0.2);
+    /* Corrección en el box-shadow */
+    margin-bottom: 20px;
+}
+
+.skillIcon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.SiJavascript {
+    color: #f0db4f;
+}
+
+.SiReact {
+    color: #61dafb;
+}
+
+.SiRedux {
+    color: #764abc;
+}
+
+.SiHtml5 {
+    color: #e34c26;
+}
+
+.SiCss3 {
+    color: #2965f1;
+}
+
+.SiPostgresql {
+    color: #336791;
+}
+
+.SiTypescript {
+    color: #007acc;
+}
+
+.SiTailwindcss {
+    color: #38b2ac;
+}
+
+.SiExpress {
+    color: #000000;
+}
+
+.SiNodedotjs {
+    color: #68a063;
+}
+
+.SiSequelize {
+    color: #52b0e7;
+}
+
+.SiZotero {
+    color: #000000;
+}
+
+.softSkillText {
+    background-color: #fffcfc21;
+    font-size: 18px;
+    color: #fffbfb;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(14, 68, 185, 0.2);
+}
+
+
+/* Ajustes para la sección de habilidades en dispositivos móviles */
+@media (max-width: 412px) { /* Ajustamos el ancho máximo para Samsung A51 */
+    .skillsContainer {
+      padding: 0px;
+    }
+  
+    .skillGrid {
+      flex-direction: row; /* Cambiamos la dirección a fila para dispositivos móviles */
+      flex-wrap: wrap; /* Permitimos que los elementos se envuelvan en varias filas */
+      justify-content: space-between; /* Distribuimos los elementos en dos columnas */
+    }
+  
+    .skillContainer {
+      width: calc(30% - 10px); /* Divide en dos columnas con espacio entre ellas */
+      margin: 10px;/* Espacio entre elementos */
+     
+    }
+  
+    .softSkillText {
+      font-size: 16px; /* Reduce el tamaño de fuente para textos de habilidades blandas */
+      padding: 15px; /* Reduce el espacio alrededor del texto */
+      box-sizing: border-box;
+      margin: -10px;
+    }
+  }
+  
